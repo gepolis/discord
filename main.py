@@ -38,5 +38,5 @@ for cog in os.listdir("./cogs"):
         bot.load_extension(f"cogs.{cog[:-3]}")
 
 if __name__ == "__main__":
-    bot.run("MTE2MjcxNzExODYyMjYxMzU5Ng.G27un-.M3gtE1GN8I4acxmbqlCzUIbYnMOsA7ejXGb5P4")
+    bot.run("MTE2MjcxNzExODYyMjYxMzU5Ng.GdWbW-.2AnBCWYkiqrqVupCKpWL3B69A1PekN2TRsNgfs")
 
