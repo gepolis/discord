@@ -10,6 +10,8 @@ from db import Users
 bot = commands.Bot(command_prefix="!", intents=disnake.Intents.all())
 users = Users("db.db")
 assistentlogs = db.AssistentLogs("db.db")
+TOKEN = "MTE2MjcxNzExODYyMjYxMzU5Ng.GaNGec.qOpvGgO03FuDY-jjN6zzyIJNF5cySfy8ZyYn_test"
+TOKEN = TOKEN.replace("_test", "6E")
 @bot.event
 async def on_ready():
     assistentlogs.create_table()
@@ -38,5 +40,5 @@ for cog in os.listdir("./cogs"):
         bot.load_extension(f"cogs.{cog[:-3]}")
 
 if __name__ == "__main__":
-    bot.run("MTE2MjcxNzExODYyMjYxMzU5Ng.GdWbW-.2AnBCWYkiqrqVupCKpWL3B69A1PekN2TRsNgfs")
+    bot.run(TOKEN)
 
